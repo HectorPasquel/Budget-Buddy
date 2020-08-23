@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="CSS/stylespage3.css">
+
+    <script>
+
+        
+
+        var sItem = []
+        var sPrice = []
+        var sDay = []
+        var valueB = 0
+      
+
+
+
+       
+        function logO(){
+            location.href="Main.html"
+        }
+
+        function buttBackP(){
+            location.href="page2.html"
+        }
+
+
+        function buttB() {
+            var valorB = document.getElementById("iBudget").value
+            if (valorB >= 0) {
+            document.getElementById("budgetDD").innerHTML = valorB
+            valueB = valorB
+
+            }
+            else {
+                alert("Please enter a number")
+            }
+            
+        } 
+    
+
+        function show(){
+            document.getElementById("output").innerHTML=""
+            for(var i =0; i < sItem.length; i++){
+                document.getElementById("output").innerHTML += "Day: " + sDay[i] + " Item: " + sItem[i] + " Price: " + sPrice[i] + "<br>"
+            }
+
+        }
+
+        function buttA() {
+            var data1 = document.getElementById("iItem").value
+            var data2 = document.getElementById("iPrice").value * 1
+            var data3 = document.getElementById("iDay").value
+
+
+            if (data2 >= 0  && data1.length > 0 && data3 >= 1 && data3 <= 7 ) {
+                sItem.push(data1)
+                sPrice.push(data2)
+                sDay.push(data3)
+            
+
+
+            }
+            else { 
+                alert("Please enter valid information")
+            }
+
+            show()
+            totalWk()
+
+        }
+
+        function buttE() {
+            var itemU = document.getElementById("iItem").value
+
+            for(var i = 0; i < sItem.length; i++){
+                if(sItem[i] == itemU){
+                    sItem.splice(i,1)
+                    sPrice.splice(i,1)
+                }
+            }
+
+            show()
+            
+        }
+
+        function totalWk() {
+            var valorT = 0
+            for(var i = 0; i < sPrice.length; i++){
+                valorT = valorT + sPrice[i]
+            }
+            if(valorT > valueB){
+                alert("You passed the budget of the week")
+            }
+            document.getElementById("answerW").innerHTML = valorT
+        }
+
+
+
+       function buttAve(){
+            var totalA = 0
+
+            for(var i = 0; i < sPrice.length; i++){
+                totalA = totalA + sPrice[i]
+            }
+
+            var promedioB = totalA / 7
+
+            document.getElementById("answerA").innerHTML = promedioB
+        } 
+
+        function buttT() {
+            var acumT = 0;
+            var dayW = document.getElementById("iDay").value
+            for(var i = 0; i < sDay.length; i++){
+                if(sDay[i] == dayW){
+                    acumT = acumT + sPrice[i]
+                }
+
+            }
+            document.getElementById("answerD").innerHTML = acumT
+            
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</script>
+
+
+
+
+</head>
+<body>
+    <div>
+    
+        <h1>Budget Buddy</h1>
+
+        <img class="billetes" src="IMG/YLosBilletes.png" alt="Y los billetes?">
+        <img class="billetes2" src="IMG/YLosBilletes.png" alt="Y los billetes2">
+        <button class="buttOut" onclick="logO()">Logout</button>
+        <img class="avatar" src="IMG/fb3.png" alt="ImagenUsuario"> 
+    </div>
+
+    <h2>Expenses Calculator</h2>
+
+    <button class="buttBack" onclick="buttBackP()">Back</button>
+
+    <div class="box">
+
+
+
+        <div >
+
+
+            <label class="question" for="budget">Budget</label>
+            <input class="question" type="text" placeholder="Enter Budget" id="iBudget">
+
+            <label class="question" for="day">Day of the week</label>
+            <input class="question" type="text" placeholder="Enter day (1-7)" id="iDay">
+
+            <label class="question" for="item">Item</label>
+            <input class="question" type="text" placeholder="Enter the Item" id="iItem">
+
+            <label class="question" for="price">Price</label>
+            <input class="question" type="text" placeholder="Enter the price" id="iPrice">
+
+        
+
+        </div >
+             
+        <div>
+
+
+
+            <div class="totalD">
+                <label for="dayA">Total of the day</label>
+                <div class="answerDay" id="answerD">
+
+                  0
+                </div>
+            </div>
+
+
+
+            <div class="totalW">
+                <label for="weekA">Total of the week</label>
+                <div class="answerWeek" id="answerW">
+                   0
+                </div>
+            </div>
+
+
+
+
+            <div class="averageW">
+                <label for="aWeek">Average per day</label>
+                <div class="answerAverage" id="answerA">
+                  0
+                </div>
+            </div>
+
+
+
+            <div class="budgetD">
+                <label for="bD">Budget per week</label>
+                <div class="budgetC" id="budgetDD">
+                  0
+                </div>
+            </div>
+
+
+
+
+            <div class="list">
+                <label class="listItems" for="listA">List of items</label>
+
+
+                <div class="arrayList" id="output">
+                 
+                </div>
+            </div>
+        </div>
+
+
+
+        <div>
+
+
+            <button class="buttBudget" onclick="buttB()">Enter Budget</button>
+            <button class="buttAdd" onclick="buttA()">Add Item</button>
+            <button class="buttErase" onclick="buttE()">Erase Item</button>
+            <button class="buttAverage" onclick="buttAve()">Average per day</button>
+            <button class="buttTotal" onclick="buttT()">Total of selected day</button>
+
+
+
+        </div>
+
+
+    </div>
+
+
+   
+</body>
+</html>

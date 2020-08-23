@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary</title>
+    <link rel="stylesheet" href="Css/stylespage2.css">
+
+    <script>
+        function next(){
+            location.href="page3.html"
+        }
+
+        function logO(){
+            location.href="Main.html"
+        }
+    
+</script>
+
+</head>
+<body>
+    <div>
+    
+        <h1>Budget Buddy</h1>
+
+        <img class="billetes" src="IMG/YLosBilletes.png" alt="Y los billetes?">
+        <img class="billetes2" src="IMG/YLosBilletes.png" alt="Y los billetes2">
+        <button class="buttOut" onclick="logO()">Logout</button>
+        <img class="avatar" src="IMG/fb3.png" alt="ImagenUsuario"> 
+    </div>
+    
+   
+   
+    <h2>How are your habits of shopping?</h2>
+    <div class="box">
+
+    
+
+
+     <div class="radioA">
+
+        <p>How often do you shop?</p>
+        <input type="radio" name="oftenShop" value="twoWeek"> 
+        <label class="labels" for="twoWeek">1-2 times per week</label>  <br>
+
+        <input type="radio" name="oftenShop" value="fourWeek"> 
+        <label class="labels" for="fourWeek">3-4 times per week</label> <br>
+
+        <input type="radio" name="oftenShop" value="sevenWeek">  
+        <label class="labels" for="sevenWeek">5-7 times per week</label> <br>
+
+     </div>
+
+     <div class="radioB">
+       
+        <p>How much do you usually spend on one shopping trip?</p>
+        <input type="radio" name="much" value="hundred"> 
+        <label class="labels" for="hundred">100 or less</label>  <br>
+
+        <input type="radio" name="much" value="fiveHundred"> 
+        <label class="labels" for="fiveHundred">100 - 500</label> <br>
+
+        <input type="radio" name="much" value="thousand">  
+        <label class="labels" for="thousand">500 - 1000</label> <br>
+       
+        <input type="radio" name="much" value="more">  
+        <label class="labels" for="more">More than 1000</label> <br>
+
+     </div>
+
+     <div class="radioC">
+
+        <p>In which items do you spend more?</p>
+        <input type="radio" name= "item" value="cloth">
+        <label class="labels" for="cloth">Clothing and accesories</label> <br>
+
+        <input type="radio" name="item" value="grocery">
+        <label class="labels" for="grocery">Grocery</label> <br>
+
+        <input type="radio" name="item" value="electronic">
+        <label class="labels" for="electronic">Electronic devices</label> <br>
+
+        <input type="radio" name="item" value="other">
+        <label class="labels" for="other">Other</label> <br>
+
+     </div>
+
+     <div > 
+
+        
+        <label class="openQ" id="old1" for="old">How old are you?</label>
+        <input class="openQ" type="text" placeholder="Enter your age" id=age> <br>
+     
+        <label class="openQ" for="money">What is your monthly wage?</label>
+        <input class="openQ" type="text" placeholder="Enter your weekly wage" id=wage>
+
+ 
+
+     </div>
+
+     <button class="buttNext" onclick="next()">Next</button>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

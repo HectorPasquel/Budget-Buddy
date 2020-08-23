@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(../IMG/Fondo2.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+    
+}
+
+
+
+
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background: #373737;
+    text-align: center;
+    box-shadow: 0px 0px 5px #7b7b7b;
+    opacity: .98;
+    
+    
+}
+
+.billetes {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    left: 450px;
+}
+
+.billetes2 {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    right: 450px;
+}
+
+.textBox {
+    width: 800px;
+    height: 190px;
+    background: #7b7b7b;
+    color: #ffffff;
+    top: 35%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 30px;
+    opacity: .85;
+    box-shadow: 0px 0px 5px #000000;
+    
+    
+}
+
+
+
+
+h2 {
+    margin-top: 0px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+#paragraph {
+  
+    padding-top: 0px;
+    font-size: 20px;
+    
+
+}
+
+#YT {
+    width: 40%;
+   text-align: center;
+}
+
+
+
+
+
+.loginBox {
+    width: 300px;
+    height: 410px;
+    background: #7b7b7b;
+    color: #ffffff;
+    top: 55%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    display: block;
+    border-radius: 30px;
+    opacity: .85;
+    box-shadow: 0px 0px 5px #000000;
+    
+}
+
+.avatar {
+    width: 115px;
+    height: 110px;
+    position: absolute;
+    top: 20px;
+    left: 90px; 
+ 
+}
+
+#loginHead {
+    margin-top: 70px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+label {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"]
+ {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    height: 30px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 100px;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    border: none;
+}
+
+button:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+button:active{
+    background: #c7c7c7;
+    color: #000000;
+}
+
+.links {
+    
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    padding: 3px;
+    color: #ffffff;
+
+}
+
+#forgot {
+    margin-top: 35px;
+
+}
+
+.video {
+    top: 55%;
+    left: 12%;
+    position: absolute;
+   
+}

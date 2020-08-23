@@ -1,0 +1,303 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(../IMG/Fondo2.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+    
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background: #373737;
+    text-align: center;
+    box-shadow: 0px 0px 5px #7b7b7b;
+    opacity: .98;
+    
+    
+}
+
+.billetes {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    left: 450px;
+}
+
+.billetes2 {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    right: 450px;
+}
+
+.avatar {
+    width: 55px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    right: 60px; 
+ 
+}
+
+.buttOut {
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 7%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+   top: 40px;
+    border: none;
+}
+
+h2 {
+    text-align: center;
+    background: #7b7b7b;
+    margin: 40px 450px 40px 450px;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .85;
+    box-shadow: 0px 0px 5px #000000;
+}
+.buttBack {
+    display: block;
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    left: 29%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    top: 22%;
+    border: none;
+}
+
+.box {
+    width: 900px;
+    height: 500px;
+    background: #7b7b7b;
+    position: absolute;
+    left: 22.1%;
+    top: 250px;
+    border-radius: 30px;
+    padding: 0px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .85;
+    box-shadow: 0px 0px 5px #000000;
+   
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    height: 30px;
+
+}
+
+.question {
+    display: block;
+    margin: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+
+    
+    
+}
+
+.answerDay {
+    width: 150px;
+    height: 30px;
+    background:#373737;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+    
+}
+
+.totalD {
+    position: absolute;
+    left: 35%;
+    top: 110px;
+    
+}
+
+.totalW {
+    position: absolute;
+    left: 35%;
+    top: 190px;
+}
+
+.answerWeek {
+    width: 150px;
+    height: 30px;
+    background:#373737;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 10px;   
+    
+}
+
+.averageW {
+    position: absolute;
+    left: 35%;
+    top: 30px;
+}
+
+.answerAverage {
+    width: 150px;
+    height: 30px;
+    background:#373737;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.budgetD {
+    position: absolute;
+    left: 35%;
+    top: 270px;
+}
+
+.budgetC {
+    width: 150px;
+    height: 30px;
+    background:#373737;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+
+
+.arrayList {
+    width: 260px;
+    height: 300px;
+    padding: 30px;
+    background: #373737;
+    border-radius: 40px;
+    position: absolute;
+    top: 80px;
+    left: 60%;
+    font-size: 15px;
+}
+
+.listItems {
+    position: absolute;
+    top: 30px;
+    left: 66%;
+    font-size: 40px;
+}
+
+button:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+button:active{
+    background: #c7c7c7;
+    color: #000000;
+}
+
+.buttBudget {
+    display: block;
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    left: 31.5%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    top: 70%;
+    border: none;
+}
+
+
+.buttAdd {
+    display: block;
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    left: 44%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    top: 70%;
+    border: none;
+}
+
+.buttErase {
+    display: block;
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    left: 31.5%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    top: 80%;
+    border: none;
+}
+
+.buttAverage {
+    display: block;
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    left: 44%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    top: 80%;
+    border: none;
+}
+
+.buttTotal {
+    display: block;
+    width: 215px;
+    height: 35px;
+    position: absolute;
+    left: 31.5%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    top: 90%;
+    border: none;
+}
+
+

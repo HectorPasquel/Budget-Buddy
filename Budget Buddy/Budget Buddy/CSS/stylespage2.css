@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(../IMG/Fondo2.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+       
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background: #373737;
+    text-align: center;
+    opacity: .98;
+    
+    
+}
+
+.billetes {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    left: 450px;
+}
+
+.billetes2 {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+    right: 450px;
+}
+
+.avatar {
+    width: 55px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    right: 60px; 
+ 
+}
+
+
+.box {
+    width: 700px;
+    height: 500px;
+    background: #7b7b7b;
+    position: absolute;
+    left: 28.1%;
+    top: 250px;
+    border-radius: 30px;
+    padding: 0px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .85;
+    box-shadow: 0px 0px 5px #000000;
+   
+   
+}
+
+.radioA {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    
+}
+
+.radioB {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}
+
+.radioC {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    height: 30px;
+
+}
+
+.openQ {
+    display: block;
+    margin-left: 420px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+
+    
+    
+}
+
+#old1 {
+    margin-top: 38%;
+}
+
+h2 {
+    text-align: center;
+    background: #7b7b7b;
+    margin: 40px 450px 40px 450px;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .85;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+input[type="radio"]:checked+label {
+    background: #505050;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.buttNext {
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 45%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+    bottom: 30px;
+    border: none;
+}
+
+button:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+button:active{
+    background: #c7c7c7;
+    color: #000000;
+}
+
+.buttOut {
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 7%;
+    color:  #000000;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 30px;
+   top: 40px;
+    border: none;
+}
+
+
+

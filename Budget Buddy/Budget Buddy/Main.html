@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="CSS/StylesMain.css">
+
+
+   
+    <script>
+            function Logg(){
+            var passvar = document.getElementById("pass").value
+            var uservar = document.getElementById("user").value
+            
+            if(passvar.length >= 8 && uservar.indexOf("@") > 0){
+                location.href="page2.html"
+            }
+            else{
+                alert("Your usernme or password is invalid")
+            }
+            }
+        
+    </script>
+
+
+
+</head>
+<body>
+
+    <div>
+    
+        <h1>Budget Buddy</h1>
+
+        <img class="billetes" src="IMG/YLosBilletes.png" alt="Y los billetes?">
+        <img class="billetes2" src="IMG/YLosBilletes.png" alt="Y los billetes2">
+    </div>
+    
+
+    
+    
+    <div class="textBox">
+        <h2>What's Budget Buddy? </h2>
+       
+        <p id="paragraph">
+            The manage of money is always a problem of many people. This website was created to have a control of the money spend in the people shoppings. First the person will enter their initial budget of this day, then they will enter their shop list and the website will made an addition of all the items and if they passed their budget the app will send an alert that they already passed. Another function of this app is that they will calculate the average of their weekly spending to take a control of their money.
+            </p>
+        </div>
+
+    <div class="loginBox">
+        <img class="avatar" src="IMG/fb2.png" alt="ImagenUsuario"> 
+         
+         <h3 id="loginHead">Login Here</h1>
+         <div>
+     
+         <label for="username">Username</label>
+         <input type="text" placeholder="Enter Username" id=user>
+     
+         <label for="password">Password</label>
+         <input type="text" placeholder="Enter Password" id=pass>
+     
+         <button onclick="Logg()">Login</button>
+     
+         
+     
+         <a class="links" id="forgot"  href="">Forgot yout password?</a>
+         <a class="links" href="https://www.google.com.mx/">Registrer</a>
+
+
+         </div>
+    </div>
+    
+     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CU4l_rs50Kk" 
+     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>
